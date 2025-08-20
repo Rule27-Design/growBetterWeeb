@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Forum - GrowGuard Authority</title>
+    <meta name="description" content="Connect with expert growers, share experiences, and get real-time problem solving in our moderated cannabis cultivation community." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgrowguard5908back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-natural sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="#2D5016"/>
+                            <path d="M20 8C16.5 8 14 10.5 14 14V20C14 23.5 16.5 26 20 26C23.5 26 26 23.5 26 20V14C26 10.5 23.5 8 20 8Z" fill="#4A7C59"/>
+                            <path d="M20 12C18.3 12 17 13.3 17 15V19C17 20.7 18.3 22 20 22C21.7 22 23 20.7 23 19V15C23 13.3 21.7 12 20 12Z" fill="#64A578"/>
+                            <circle cx="20" cy="32" r="2" fill="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-inter font-bold text-primary">GrowGuard Authority</h1>
+                        <p class="text-xs text-text-secondary">Premium Cultivation Resource</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Home</a>
+                        <a href="product_reviews_database.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Product Reviews</a>
+                        <a href="knowledge_academy.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Knowledge Academy</a>
+                        <a href="community_forum.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Community</a>
+                        <a href="testing_lab_insights.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Lab Insights</a>
+                        <a href="industry_news_hub.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Industry News</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Home</a>
+                    <a href="product_reviews_database.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Product Reviews</a>
+                    <a href="knowledge_academy.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Knowledge Academy</a>
+                    <a href="community_forum.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Community</a>
+                    <a href="testing_lab_insights.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Lab Insights</a>
+                    <a href="industry_news_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Industry News</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Community Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-success-100 text-success-700 rounded-full text-sm font-semibold mb-4">
+                    <div class="w-2 h-2 bg-success rounded-full mr-2 animate-pulse"></div>
+                    25,342 Active Community Members • 1,847 Online Now
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-primary leading-tight mb-4">
+                    Community <span class="text-gradient-primary">Forum</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Connect with expert growers, share experiences, and get real-time solutions from the most knowledgeable cannabis cultivation community.
+                </p>
+
+                <!-- Quick Action Buttons -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="btn-primary" onclick="showNewPostModal()">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                        Start New Discussion
+                    </button>
+                    <button class="btn-secondary" onclick="showPhotoUpload()">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                        </svg>
+                        Upload Problem Photos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Navigation & Search -->
+    <section class="bg-white border-b border-gray-200 sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                <!-- Category Navigation -->
+                <div class="flex flex-wrap gap-2">
+                    <button class="px-4 py-2 bg-primary text-white rounded-lg text-sm font-semibold transition-natural" onclick="filterCategory('all')">
+                        All Discussions
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-secondary hover:bg-primary hover:text-white rounded-lg text-sm font-semibold transition-natural" onclick="filterCategory('diagnosis')">
+                        Pest Diagnosis
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-secondary hover:bg-primary hover:text-white rounded-lg text-sm font-semibold transition-natural" onclick="filterCategory('products')">
+                        Product Reviews
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-secondary hover:bg-primary hover:text-white rounded-lg text-sm font-semibold transition-natural" onclick="filterCategory('journals')">
+                        Grow Journals
+                    </button>
+                    <button class="px-4 py-2 bg-surface text-text-secondary hover:bg-primary hover:text-white rounded-lg text-sm font-semibold transition-natural" onclick="filterCategory('expert-qa')">
+                        Expert Q&A
+                    </button>
+                </div>
+
+                <!-- Search & Filters -->
+                <div class="flex gap-3">
+                    <div class="relative flex-1 lg:w-80">
+                        <input type="text" placeholder="Search discussions, problems, solutions..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary-500 transition-natural" />
+                        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-surface transition-natural" onclick="showFilters()">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.207A1 1 0 013 6.5V4z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Forum Content -->
+    <section class="py-8 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Forum Sidebar -->
+                <div class="lg:col-span-1">
+                    <!-- Community Stats -->
+                    <div class="card-floating mb-6">
+                        <h3 class="font-inter font-semibold text-primary mb-4">Community Stats</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Total Members</span>
+                                <span class="font-semibold text-primary">25,342</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Online Now</span>
+                                <span class="font-semibold text-success">1,847</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Today's Posts</span>
+                                <span class="font-semibold text-secondary">342</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Problems Solved</span>
+                                <span class="font-semibold text-accent">8,921</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Contributors -->
+                    <div class="card-floating mb-6">
+                        <h3 class="font-inter font-semibold text-primary mb-4">Top Contributors</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Chen" class="w-8 h-8 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm font-semibold text-primary">Dr. Chen</span>
+                                        <span class="px-2 py-0.5 bg-accent-100 text-accent text-xs rounded-full">Expert</span>
+                                    </div>
+                                    <span class="text-xs text-text-secondary">2,847 helpful answers</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GrowMaster Jake" class="w-8 h-8 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm font-semibold text-primary">GrowMaster Jake</span>
+                                        <span class="px-2 py-0.5 bg-primary-100 text-primary text-xs rounded-full">Master</span>
+                                    </div>
+                                    <span class="text-xs text-text-secondary">1,923 solutions shared</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="OrganicGuru" class="w-8 h-8 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm font-semibold text-primary">OrganicGuru</span>
+                                        <span class="px-2 py-0.5 bg-secondary-100 text-secondary text-xs rounded-full">Pro</span>
+                                    </div>
+                                    <span class="text-xs text-text-secondary">1,456 organic solutions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="card-floating">
+                        <h3 class="font-inter font-semibold text-primary mb-4">Quick Links</h3>
+                        <div class="space-y-2">
+                            <a href="knowledge_academy.html" class="block text-sm text-text-secondary hover:text-primary transition-natural">📚 Growing Guides</a>
+                            <a href="product_reviews_database.html" class="block text-sm text-text-secondary hover:text-primary transition-natural">🧪 Product Reviews</a>
+                            <a href="testing_lab_insights.html" class="block text-sm text-text-secondary hover:text-primary transition-natural">🔬 Lab Results</a>
+                            <a href="javascript:void(0)" class="block text-sm text-text-secondary hover:text-primary transition-natural">📅 Growing Calendar</a>
+                            <a href="javascript:void(0)" class="block text-sm text-text-secondary hover:text-primary transition-natural">🏆 Success Stories</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Discussion Feed -->
+                <div class="lg:col-span-3">
+                    <!-- Featured Expert Q&A -->
+                    <div class="card-floating mb-6 border-l-4 border-accent">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-accent">Live Expert Q&A Session</h3>
+                                <p class="text-sm text-text-secondary">Dr. Sarah Rodriguez answering IPM questions • Started 2 hours ago</p>
+                            </div>
+                            <div class="ml-auto">
+                                <span class="px-3 py-1 bg-accent text-white text-sm rounded-full font-semibold">🔴 LIVE</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary mb-4">Join our weekly expert session focusing on integrated pest management strategies for indoor cultivation. Ask your questions and get professional answers!</p>
+                        <div class="flex items-center gap-4 text-sm">
+                            <span class="text-success font-semibold">👥 247 participants</span>
+                            <span class="text-text-secondary">💬 89 questions answered</span>
+                            <button class="text-accent font-semibold hover:text-accent-700 transition-natural">Join Session →</button>
+                        </div>
+                    </div>
+
+                    <!-- Discussion Posts -->
+                    <div class="space-y-6">
+                        <!-- Post 1 - Pest Diagnosis with Photos -->
+                        <article class="card-floating">
+                            <div class="flex items-start gap-4">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Avatar" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <h4 class="font-inter font-semibold text-primary">NewGrower_2025</h4>
+                                        <span class="px-2 py-1 bg-primary-100 text-primary text-xs rounded-full">Beginner</span>
+                                        <span class="text-sm text-text-secondary">• 15 minutes ago</span>
+                                        <span class="px-2 py-1 bg-accent-100 text-accent text-xs rounded-full">🆘 URGENT</span>
+                                    </div>
+                                    <h3 class="text-lg font-inter font-semibold text-primary mb-3">Help! Strange spots appearing on leaves - is this spider mites?</h3>
+                                    <p class="text-text-secondary mb-4">I noticed these tiny yellow spots appearing on my plants yesterday. They seem to be spreading quickly. I'm in week 3 of flowering and really worried. Can someone help identify what this might be?</p>
+                                    
+                                    <!-- Photo Gallery -->
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+                                        <div class="aspect-square rounded-lg overflow-hidden">
+                                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plant problem photo 1" class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-natural" loading="lazy" onclick="openPhotoModal(this.src)" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        </div>
+                                        <div class="aspect-square rounded-lg overflow-hidden">
+                                            <img src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plant problem photo 2" class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-natural" loading="lazy" onclick="openPhotoModal(this.src)" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                                        </div>
+                                        <div class="aspect-square rounded-lg overflow-hidden">
+                                            <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plant problem photo 3" class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition-natural" loading="lazy" onclick="openPhotoModal(this.src)" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        </div>
+                                        <div class="aspect-square rounded-lg overflow-hidden bg-surface flex items-center justify-center cursor-pointer hover:bg-primary-50 transition-natural">
+                                            <span class="text-text-secondary text-sm">+2 more</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Post Actions -->
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-6">
+                                            <button class="flex items-center gap-2 text-text-secondary hover:text-primary transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                                </svg>
+                                                <span class="font-semibold">23</span>
+                                            </button>
+                                            <button class="flex items-center gap-2 text-text-secondary hover:text-secondary transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                                </svg>
+                                                <span class="font-semibold">7 replies</span>
+                                            </button>
+                                            <button class="flex items-center gap-2 text-text-secondary hover:text-accent transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                                </svg>
+                                                <span>Share</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs rounded-full">Pest Diagnosis</span>
+                                            <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Indoor Growing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Expert Reply -->
+                            <div class="mt-6 ml-16 border-l-2 border-accent-200 pl-4">
+                                <div class="flex items-start gap-3">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Chen" class="w-10 h-10 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <div class="flex-1">
+                                        <div class="flex items-center gap-2 mb-2">
+                                            <h5 class="font-inter font-semibold text-accent">Dr. Chen</h5>
+                                            <span class="px-2 py-1 bg-accent text-white text-xs rounded-full">✓ Expert</span>
+                                            <span class="text-sm text-text-secondary">• 8 minutes ago</span>
+                                        </div>
+                                        <p class="text-text-secondary mb-3">Based on your photos, this appears to be early-stage spider mite damage. The stippling pattern and location on the leaves are classic indicators. Since you're in flowering, I recommend immediate action with organic solutions.</p>
+                                        <div class="bg-accent-50 border border-accent-200 rounded-lg p-3 mb-3">
+                                            <h6 class="font-semibold text-accent mb-2">Recommended Treatment Plan:</h6>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Apply neem oil spray (evening application only)</li>
+                                                <li>• Increase humidity to 50-60% if possible</li>
+                                                <li>• Check our <a href="product_reviews_database.html" class="text-accent hover:text-accent-700 underline">organic pesticide reviews</a></li>
+                                                <li>• Monitor daily and document progress</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex items-center gap-4 text-sm">
+                                            <button class="flex items-center gap-1 text-accent hover:text-accent-700 transition-natural">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+                                                </svg>
+                                                <span class="font-semibold">47 helpful</span>
+                                            </button>
+                                            <button class="text-text-secondary hover:text-primary transition-natural">Reply</button>
+                                            <span class="text-text-secondary">Mark as Solution</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Post 2 - Product Experience Sharing -->
+                        <article class="card-floating">
+                            <div class="flex items-start gap-4">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GrowMaster Jake" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <h4 class="font-inter font-semibold text-primary">GrowMaster_Jake</h4>
+                                        <span class="px-2 py-1 bg-primary text-white text-xs rounded-full">Master Grower</span>
+                                        <span class="text-sm text-text-secondary">• 1 hour ago</span>
+                                    </div>
+                                    <h3 class="text-lg font-inter font-semibold text-primary mb-3">Amazing results with BioSafe Organic Pesticide - 30-day treatment log</h3>
+                                    <p class="text-text-secondary mb-4">Just finished a complete treatment cycle using BioSafe's new organic formula on a thrips infestation. Documented the entire process with photos and effectiveness ratings. This stuff really works!</p>
+                                    
+                                    <!-- Treatment Timeline -->
+                                    <div class="bg-surface rounded-lg p-4 mb-4">
+                                        <h5 class="font-semibold text-primary mb-3">Treatment Timeline & Results</h5>
+                                        <div class="space-y-3">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center text-white text-sm font-bold">1</div>
+                                                <div class="flex-1">
+                                                    <div class="flex justify-between items-center">
+                                                        <span class="font-semibold">Day 1-3: Initial Application</span>
+                                                        <span class="text-success font-semibold">✓ 40% reduction</span>
+                                                    </div>
+                                                    <p class="text-sm text-text-secondary">Applied every other day as directed</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center text-white text-sm font-bold">2</div>
+                                                <div class="flex-1">
+                                                    <div class="flex justify-between items-center">
+                                                        <span class="font-semibold">Day 7-14: Follow-up Treatment</span>
+                                                        <span class="text-success font-semibold">✓ 85% reduction</span>
+                                                    </div>
+                                                    <p class="text-sm text-text-secondary">Weekly applications, monitoring closely</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center text-white text-sm font-bold">3</div>
+                                                <div class="flex-1">
+                                                    <div class="flex justify-between items-center">
+                                                        <span class="font-semibold">Day 21-30: Maintenance</span>
+                                                        <span class="text-success font-semibold">✓ 99% elimination</span>
+                                                    </div>
+                                                    <p class="text-sm text-text-secondary">Preventive applications, no new damage</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Rating System -->
+                                    <div class="grid md:grid-cols-3 gap-4 mb-4">
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-success mb-1">9.2/10</div>
+                                            <div class="text-sm text-text-secondary">Effectiveness</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-primary mb-1">8.8/10</div>
+                                            <div class="text-sm text-text-secondary">Ease of Use</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-secondary mb-1">9.5/10</div>
+                                            <div class="text-sm text-text-secondary">Plant Safety</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Post Actions -->
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-6">
+                                            <button class="flex items-center gap-2 text-text-secondary hover:text-primary transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                                </svg>
+                                                <span class="font-semibold">156</span>
+                                            </button>
+                                            <button class="flex items-center gap-2 text-text-secondary hover:text-secondary transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                                </svg>
+                                                <span class="font-semibold">23 replies</span>
+                                            </button>
+                                            <a href="product_reviews_database.html" class="flex items-center gap-2 text-accent hover:text-accent-700 transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                                </svg>
+                                                <span>View Full Review</span>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Product Review</span>
+                                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs rounded-full">Success Story</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Post 3 - Grow Journal Showcase -->
+                        <article class="card-floating">
+                            <div class="flex items-start gap-4">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="OrganicGuru" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <h4 class="font-inter font-semibold text-primary">OrganicGuru_23</h4>
+                                        <span class="px-2 py-1 bg-secondary text-white text-xs rounded-full">Pro Grower</span>
+                                        <span class="text-sm text-text-secondary">• 3 hours ago</span>
+                                        <span class="px-2 py-1 bg-success-100 text-success text-xs rounded-full">🏆 Featured</span>
+                                    </div>
+                                    <h3 class="text-lg font-inter font-semibold text-primary mb-3">Completed: 100% Organic IPM Grow - Seed to Harvest Documentation</h3>
+                                    <p class="text-text-secondary mb-4">Just harvested my completely organic grow using only IPM strategies and community-recommended products. 16 weeks from seed to cure, zero synthetic chemicals, amazing results! Full photo documentation and product list included.</p>
+                                    
+                                    <!-- Before/After Gallery -->
+                                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                                        <div class="space-y-2">
+                                            <h6 class="font-semibold text-text-secondary text-sm">Week 2 - Early Issues</h6>
+                                            <div class="aspect-video rounded-lg overflow-hidden">
+                                                <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Early grow issues" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                            </div>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <h6 class="font-semibold text-success text-sm">Week 16 - Harvest Ready</h6>
+                                            <div class="aspect-video rounded-lg overflow-hidden">
+                                                <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Harvest ready plants" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Grow Stats -->
+                                    <div class="bg-success-50 border border-success-200 rounded-lg p-4 mb-4">
+                                        <h6 class="font-semibold text-success mb-3">Final Harvest Results</h6>
+                                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                            <div>
+                                                <div class="text-xl font-bold text-success">847g</div>
+                                                <div class="text-sm text-text-secondary">Total Yield</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-xl font-bold text-success">0</div>
+                                                <div class="text-sm text-text-secondary">Pest Issues</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-xl font-bold text-success">$127</div>
+                                                <div class="text-sm text-text-secondary">Total IPM Cost</div>
+                                            </div>
+                                            <div>
+                                                <div class="text-xl font-bold text-success">16</div>
+                                                <div class="text-sm text-text-secondary">Weeks Total</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Post Actions -->
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-6">
+                                            <button class="flex items-center gap-2 text-text-secondary hover:text-primary transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                                </svg>
+                                                <span class="font-semibold">289</span>
+                                            </button>
+                                            <button class="flex items-center gap-2 text-text-secondary hover:text-secondary transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                                </svg>
+                                                <span class="font-semibold">45 replies</span>
+                                            </button>
+                                            <button class="flex items-center gap-2 text-accent hover:text-accent-700 transition-natural">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                                </svg>
+                                                <span>Download Full Journal</span>
+                                            </button>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="px-2 py-1 bg-success-100 text-success text-xs rounded-full">Grow Journal</span>
+                                            <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Organic IPM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Load More Button -->
+                        <div class="text-center py-8">
+                            <button class="btn-primary" onclick="loadMorePosts()">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                </svg>
+                                Load More Discussions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 mr-3" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="white"/>
+                            <path d="M20 8C16.5 8 14 10.5 14 14V20C14 23.5 16.5 26 20 26C23.5 26 26 23.5 26 20V14C26 10.5 23.5 8 20 8Z" fill="#4A7C59"/>
+                            <path d="M20 12C18.3 12 17 13.3 17 15V19C17 20.7 18.3 22 20 22C21.7 22 23 20.7 23 19V15C23 13.3 21.7 12 20 12Z" fill="#64A578"/>
+                            <circle cx="20" cy="32" r="2" fill="#FF6B35"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-inter font-bold text-lg">GrowGuard Authority</h3>
+                            <p class="text-primary-200 text-sm">Premium Cultivation Resource</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 text-sm">
+                        The definitive resource for cannabis cultivation with scientific rigor and community-driven insights.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="product_reviews_database.html" class="text-primary-200 hover:text-white transition-natural">Product Reviews</a></li>
+                        <li><a href="knowledge_academy.html" class="text-primary-200 hover:text-white transition-natural">Knowledge Academy</a></li>
+                        <li><a href="testing_lab_insights.html" class="text-primary-200 hover:text-white transition-natural">Lab Insights</a></li>
+                        <li><a href="industry_news_hub.html" class="text-primary-200 hover:text-white transition-natural">Industry News</a></li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="community_forum.html" class="text-primary-200 hover:text-white transition-natural">Discussion Forum</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Success Stories</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Expert Q&A</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Growing Tips</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-200 text-sm">
+                    © 2025 GrowGuard Authority. All Rights Reserved. | Empowering growers through science-backed knowledge.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- New Post Modal -->
+    <div id="newPostModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-screen overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-inter font-bold text-primary">Start New Discussion</h3>
+                    <button onclick="hideNewPostModal()" class="text-text-secondary hover:text-primary transition-natural">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <form class="space-y-6">
+                    <!-- Category Selection -->
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Discussion Category</label>
+                        <select class="input-field">
+                            <option>Pest Problem Diagnosis</option>
+                            <option>Product Experience Sharing</option>
+                            <option>Grow Journal Showcase</option>
+                            <option>General Growing Questions</option>
+                            <option>Expert Q&A</option>
+                        </select>
+                    </div>
+
+                    <!-- Title -->
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Discussion Title</label>
+                        <input type="text" class="input-field" placeholder="Describe your problem or topic clearly..." />
+                    </div>
+
+                    <!-- Description -->
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Detailed Description</label>
+                        <textarea rows="6" class="input-field" placeholder="Provide as much detail as possible. Include growing conditions, timeline, products used, etc."></textarea>
+                    </div>
+
+                    <!-- Photo Upload -->
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Upload Photos</label>
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-primary-300 transition-natural cursor-pointer">
+                            <svg class="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                            </svg>
+                            <p class="text-text-secondary">Click to upload photos or drag and drop</p>
+                            <p class="text-sm text-text-secondary mt-1">PNG, JPG up to 10MB each</p>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Tags</label>
+                        <input type="text" class="input-field" placeholder="Add relevant tags (e.g., spider-mites, indoor, flowering)" />
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex gap-4 pt-4">
+                        <button type="submit" class="btn-primary flex-1">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                            Post Discussion
+                        </button>
+                        <button type="button" onclick="hideNewPostModal()" class="px-6 py-3 border border-gray-300 rounded-lg font-inter font-semibold text-text-secondary hover:bg-surface transition-natural">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Modal -->
+    <div id="photoModal" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button onclick="closePhotoModal()" class="absolute top-4 right-4 text-white hover:text-gray-300 transition-natural z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <img id="modalImage" src alt="Full size image" class="max-w-full max-h-full object-contain rounded-lg" />
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function filterCategory(category) {
+            // Update active button
+            const buttons = document.querySelectorAll('button[onclick^="filterCategory"]');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('bg-surface', 'text-text-secondary', 'hover:bg-primary', 'hover:text-white');
+            });
+            event.target.classList.remove('bg-surface', 'text-text-secondary', 'hover:bg-primary', 'hover:text-white');
+            event.target.classList.add('bg-primary', 'text-white');
+
+            // Filter posts logic would go here
+            console.log('Filtering by category:', category);
+        }
+
+        function showFilters() {
+            // Show advanced filters modal
+            console.log('Show filters modal');
+        }
+
+        function showNewPostModal() {
+            document.getElementById('newPostModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function hideNewPostModal() {
+            document.getElementById('newPostModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function showPhotoUpload() {
+            showNewPostModal();
+            // Focus on photo upload section
+            setTimeout(() => {
+                document.querySelector('[placeholder="Click to upload photos or drag and drop"]').scrollIntoView({ behavior: 'smooth' });
+            }, 300);
+        }
+
+        function openPhotoModal(src) {
+            document.getElementById('modalImage').src = src;
+            document.getElementById('photoModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePhotoModal() {
+            document.getElementById('photoModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function loadMorePosts() {
+            // Load more posts logic
+            console.log('Loading more posts...');
+            
+            // Simulate loading
+            const button = event.target;
+            const originalText = button.innerHTML;
+            button.innerHTML = '<svg class="w-5 h-5 mr-2 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="m4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Loading...';
+            
+            setTimeout(() => {
+                button.innerHTML = originalText;
+            }, 2000);
+        }
+
+        // Close modals when clicking outside
+        document.addEventListener('click', function(event) {
+            const newPostModal = document.getElementById('newPostModal');
+            const photoModal = document.getElementById('photoModal');
+            
+            if (event.target === newPostModal) {
+                hideNewPostModal();
+            }
+            if (event.target === photoModal) {
+                closePhotoModal();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                hideNewPostModal();
+                closePhotoModal();
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

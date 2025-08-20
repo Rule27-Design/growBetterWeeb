@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Academy - GrowGuard Authority</title>
+    <meta name="description" content="Master cannabis cultivation through structured learning paths covering pest management, IPM strategies, and expert techniques from beginner to advanced levels." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgrowguard5908back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-natural sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="#2D5016"/>
+                            <path d="M20 8C16.5 8 14 10.5 14 14V20C14 23.5 16.5 26 20 26C23.5 26 26 23.5 26 20V14C26 10.5 23.5 8 20 8Z" fill="#4A7C59"/>
+                            <path d="M20 12C18.3 12 17 13.3 17 15V19C17 20.7 18.3 22 20 22C21.7 22 23 20.7 23 19V15C23 13.3 21.7 12 20 12Z" fill="#64A578"/>
+                            <circle cx="20" cy="32" r="2" fill="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-inter font-bold text-primary">GrowGuard Authority</h1>
+                        <p class="text-xs text-text-secondary">Premium Cultivation Resource</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Home</a>
+                        <a href="product_reviews_database.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Product Reviews</a>
+                        <a href="knowledge_academy.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Knowledge Academy</a>
+                        <a href="community_forum.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Community</a>
+                        <a href="testing_lab_insights.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Lab Insights</a>
+                        <a href="industry_news_hub.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Industry News</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Home</a>
+                    <a href="product_reviews_database.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Product Reviews</a>
+                    <a href="knowledge_academy.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Knowledge Academy</a>
+                    <a href="community_forum.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Community</a>
+                    <a href="testing_lab_insights.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Lab Insights</a>
+                    <a href="industry_news_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Industry News</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+            <div class="text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-semibold mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
+                    </svg>
+                    Structured Learning • Expert Content • Progressive Mastery
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-primary leading-tight mb-6">
+                    Master Cannabis <span class="text-gradient-primary">Cultivation Science</span>
+                </h1>
+                <p class="text-xl text-text-secondary leading-relaxed max-w-3xl mx-auto mb-8">
+                    From beginner fundamentals to advanced IPM strategies. Learn through structured paths designed by industry experts with hands-on exercises and real-world applications.
+                </p>
+
+                <!-- Learning Path Selector -->
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="showLearningPath('beginner')" class="learning-path-btn active px-6 py-3 bg-primary text-white rounded-lg font-semibold transition-natural hover:bg-primary-700" data-level="beginner">
+                        Beginner Path
+                    </button>
+                    <button onclick="showLearningPath('intermediate')" class="learning-path-btn px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg font-semibold transition-natural hover:bg-primary hover:text-white" data-level="intermediate">
+                        Intermediate Path
+                    </button>
+                    <button onclick="showLearningPath('advanced')" class="learning-path-btn px-6 py-3 bg-white text-primary border-2 border-primary rounded-lg font-semibold transition-natural hover:bg-primary hover:text-white" data-level="advanced">
+                        Advanced Path
+                    </button>
+                </div>
+
+                <!-- Progress Overview -->
+                <div class="grid md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-2xl font-inter font-bold text-primary">12</div>
+                        <div class="text-sm text-text-secondary">Learning Modules</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-inter font-bold text-secondary">45+</div>
+                        <div class="text-sm text-text-secondary">Expert Videos</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-inter font-bold text-accent">8</div>
+                        <div class="text-sm text-text-secondary">Interactive Tools</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Beginner Path -->
+            <div id="beginner-path" class="learning-path-content">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-inter font-bold text-primary mb-4">Beginner Learning Path</h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">Start your cultivation journey with essential fundamentals and basic pest management principles</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Module 1 -->
+                    <div class="card-floating group cursor-pointer" onclick="openModule('beginner-basics')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cannabis Growing Basics" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-primary text-white text-sm rounded-full">Module 1</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-success text-white text-sm rounded-full">✓ Complete</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-primary mb-3 group-hover:text-primary-700 transition-natural">
+                            Growing Fundamentals
+                        </h3>
+                        <p class="text-text-secondary mb-4">Essential plant biology, growth cycles, and environmental requirements for healthy cannabis cultivation.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>45 min</span>
+                            </div>
+                            <div class="flex items-center text-sm text-primary font-semibold">
+                                <span>Start Learning</span>
+                                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 2 -->
+                    <div class="card-floating group cursor-pointer" onclick="openModule('pest-identification')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pest Identification Guide" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-primary text-white text-sm rounded-full">Module 2</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-warning text-white text-sm rounded-full">In Progress</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-primary mb-3 group-hover:text-primary-700 transition-natural">
+                            Common Pest Identification
+                        </h3>
+                        <p class="text-text-secondary mb-4">Learn to identify spider mites, aphids, thrips, and other common cannabis pests through visual guides.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>60 min</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mx-4">
+                                <div class="bg-primary h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                            <div class="text-sm text-primary font-semibold">65%</div>
+                        </div>
+                    </div>
+
+                    <!-- Module 3 -->
+                    <div class="card-floating group cursor-pointer opacity-60" onclick="openModule('basic-prevention')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Prevention Strategies" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-gray-400 text-white text-sm rounded-full">Module 3</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-gray-400 text-white text-sm rounded-full">🔒 Locked</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-gray-500 mb-3">
+                            Basic Prevention Strategies
+                        </h3>
+                        <p class="text-gray-400 mb-4">Environmental controls, cleanliness protocols, and early detection methods for pest prevention.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                                <span>Complete Module 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intermediate Path -->
+            <div id="intermediate-path" class="learning-path-content hidden">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-inter font-bold text-secondary mb-4">Intermediate Learning Path</h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">Advanced pest management techniques and integrated solutions for experienced growers</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Module 4 -->
+                    <div class="card-floating group cursor-pointer" onclick="openModule('ipm-strategies')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=2032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="IPM Strategies" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-secondary text-white text-sm rounded-full">Module 4</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-success text-white text-sm rounded-full">✓ Complete</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-secondary mb-3 group-hover:text-secondary-700 transition-natural">
+                            Integrated Pest Management
+                        </h3>
+                        <p class="text-text-secondary mb-4">Comprehensive IPM approach combining biological, cultural, and chemical control methods.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>90 min</span>
+                            </div>
+                            <div class="flex items-center text-sm text-secondary font-semibold">
+                                <span>Review Content</span>
+                                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 5 -->
+                    <div class="card-floating group cursor-pointer" onclick="openModule('organic-solutions')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Organic Solutions" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-secondary text-white text-sm rounded-full">Module 5</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-warning text-white text-sm rounded-full">In Progress</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-secondary mb-3 group-hover:text-secondary-700 transition-natural">
+                            Organic Treatment Solutions
+                        </h3>
+                        <p class="text-text-secondary mb-4">Natural pesticides, beneficial insects, and organic application techniques for sustainable growing.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>75 min</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mx-4">
+                                <div class="bg-secondary h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                            <div class="text-sm text-secondary font-semibold">40%</div>
+                        </div>
+                    </div>
+
+                    <!-- Module 6 -->
+                    <div class="card-floating group cursor-pointer opacity-60" onclick="openModule('application-techniques')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Application Techniques" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-gray-400 text-white text-sm rounded-full">Module 6</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-gray-400 text-white text-sm rounded-full">🔒 Locked</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-gray-500 mb-3">
+                            Advanced Application Techniques
+                        </h3>
+                        <p class="text-gray-400 mb-4">Proper timing, coverage patterns, and equipment selection for maximum treatment effectiveness.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                                <span>Complete Module 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Path -->
+            <div id="advanced-path" class="learning-path-content hidden">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-inter font-bold text-accent mb-4">Advanced Learning Path</h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">Commercial-scale solutions, regulatory compliance, and cutting-edge research applications</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Module 7 -->
+                    <div class="card-floating group cursor-pointer" onclick="openModule('commercial-scale')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Commercial Operations" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-accent text-white text-sm rounded-full">Module 7</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-success text-white text-sm rounded-full">✓ Complete</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-accent mb-3 group-hover:text-accent-700 transition-natural">
+                            Commercial Scale Operations
+                        </h3>
+                        <p class="text-text-secondary mb-4">Large-scale pest management, automation systems, and operational efficiency optimization.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>120 min</span>
+                            </div>
+                            <div class="flex items-center text-sm text-accent font-semibold">
+                                <span>Review Content</span>
+                                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Module 8 -->
+                    <div class="card-floating group cursor-pointer" onclick="openModule('regulatory-compliance')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Regulatory Compliance" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-accent text-white text-sm rounded-full">Module 8</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-warning text-white text-sm rounded-full">In Progress</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-accent mb-3 group-hover:text-accent-700 transition-natural">
+                            Regulatory Compliance
+                        </h3>
+                        <p class="text-text-secondary mb-4">State regulations, testing requirements, and documentation protocols for commercial operations.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>90 min</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2 mx-4">
+                                <div class="bg-accent h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <div class="text-sm text-accent font-semibold">75%</div>
+                        </div>
+                    </div>
+
+                    <!-- Module 9 -->
+                    <div class="card-floating group cursor-pointer opacity-60" onclick="openModule('research-applications')">
+                        <div class="relative mb-6">
+                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Research Applications" class="w-full h-48 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1002703/pexels-photo-1002703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div class="absolute top-4 left-4 px-3 py-1 bg-gray-400 text-white text-sm rounded-full">Module 9</div>
+                            <div class="absolute top-4 right-4 px-3 py-1 bg-gray-400 text-white text-sm rounded-full">🔒 Locked</div>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-gray-500 mb-3">
+                            Cutting-Edge Research
+                        </h3>
+                        <p class="text-gray-400 mb-4">Latest research findings, emerging technologies, and future trends in cannabis pest management.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-gray-400">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                                <span>Complete Module 8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Interactive Learning Tools</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Hands-on tools and calculators to apply your knowledge in real growing situations</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pest Diagnostic Tool -->
+                <div class="card-floating group cursor-pointer" onclick="openTool('pest-diagnostic')">
+                    <div class="text-center space-y-4">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto group-hover:bg-primary-200 transition-natural">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-inter font-semibold text-primary">Pest Diagnostic Wizard</h3>
+                        <p class="text-sm text-text-secondary">Interactive tool to identify pests based on symptoms and visual cues</p>
+                        <div class="flex items-center justify-center text-sm text-primary font-semibold">
+                            <span>Launch Tool</span>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatment Scheduler -->
+                <div class="card-floating group cursor-pointer" onclick="openTool('treatment-scheduler')">
+                    <div class="text-center space-y-4">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto group-hover:bg-secondary-200 transition-natural">
+                            <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-inter font-semibold text-secondary">Treatment Scheduler</h3>
+                        <p class="text-sm text-text-secondary">Plan and track your pest management applications and timing</p>
+                        <div class="flex items-center justify-center text-sm text-secondary font-semibold">
+                            <span>Launch Tool</span>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Calculator -->
+                <div class="card-floating group cursor-pointer" onclick="openTool('application-calculator')">
+                    <div class="text-center space-y-4">
+                        <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto group-hover:bg-accent-200 transition-natural">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-inter font-semibold text-accent">Application Rate Calculator</h3>
+                        <p class="text-sm text-text-secondary">Calculate precise mixing ratios and application rates for treatments</p>
+                        <div class="flex items-center justify-center text-sm text-accent font-semibold">
+                            <span>Launch Tool</span>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cost Analyzer -->
+                <div class="card-floating group cursor-pointer" onclick="openTool('cost-analyzer')">
+                    <div class="text-center space-y-4">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto group-hover:bg-primary-200 transition-natural">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-inter font-semibold text-primary">Cost-Benefit Analyzer</h3>
+                        <p class="text-sm text-text-secondary">Compare treatment costs and calculate ROI for different pest management strategies</p>
+                        <div class="flex items-center justify-center text-sm text-primary font-semibold">
+                            <span>Launch Tool</span>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Calendar Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Seasonal Growing Calendar</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Month-by-month pest emergence patterns and optimal treatment timing</p>
+            </div>
+
+            <!-- Current Month Highlight -->
+            <div class="card-floating mb-8 border-l-4 border-accent">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h3 class="text-2xl font-inter font-bold text-accent">August 2025</h3>
+                        <p class="text-text-secondary">Current Month Highlights</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm text-text-secondary">Temperature Range</div>
+                        <div class="text-lg font-semibold text-primary">75-85°F</div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-inter font-semibold text-primary mb-3">Peak Pest Activity</h4>
+                        <ul class="space-y-2 text-sm text-text-secondary">
+                            <li class="flex items-center">
+                                <div class="w-2 h-2 bg-error rounded-full mr-3"></div>
+                                <span>Spider mites - High risk in hot weather</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2 h-2 bg-warning rounded-full mr-3"></div>
+                                <span>Thrips - Moderate activity, monitor closely</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                                <span>Aphids - Low risk, routine monitoring</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-inter font-semibold text-primary mb-3">Recommended Actions</h4>
+                        <ul class="space-y-2 text-sm text-text-secondary">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>Increase humidity monitoring</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>Weekly preventive neem oil applications</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <span>Enhanced air circulation setup</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- September Preview -->
+                <div class="card group cursor-pointer hover:shadow-floating transition-natural" onclick="viewMonthDetails('september')">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-lg font-inter font-semibold text-primary">September</h4>
+                        <div class="text-sm text-text-secondary">Upcoming</div>
+                    </div>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-3"></div>
+                            <span>Powdery mildew risk increases</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                            <span>Spider mite activity decreases</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center text-sm text-primary font-semibold">
+                        <span>View Details</span>
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- October Preview -->
+                <div class="card group cursor-pointer hover:shadow-floating transition-natural" onclick="viewMonthDetails('october')">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-lg font-inter font-semibold text-primary">October</h4>
+                        <div class="text-sm text-text-secondary">Upcoming</div>
+                    </div>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-error rounded-full mr-3"></div>
+                            <span>Botrytis risk - harvest prep</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-3"></div>
+                            <span>Final IPM applications</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex items-center text-sm text-primary font-semibold">
+                        <span>View Details</span>
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Full Calendar Link -->
+                <div class="card bg-primary text-white group cursor-pointer hover:bg-primary-700 transition-natural" onclick="viewFullCalendar()">
+                    <div class="text-center space-y-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        <h4 class="text-lg font-inter font-semibold">View Full Calendar</h4>
+                        <p class="text-sm text-primary-200">Complete 12-month growing and pest management schedule</p>
+                        <div class="flex items-center justify-center text-sm font-semibold">
+                            <span>Open Calendar</span>
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Interview Series -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Expert Interview Series</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Learn from industry leaders, scientists, and master growers sharing their expertise</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Featured Interview -->
+                <div class="card-floating group cursor-pointer" onclick="playInterview('dr-chen-ipm')">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Michael Chen Interview" class="w-full h-64 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-natural">
+                            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M8 5v10l7-5-7-5z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 left-4 px-3 py-1 bg-accent text-white text-sm rounded-full">New</div>
+                        <div class="absolute bottom-4 right-4 px-3 py-1 bg-black bg-opacity-70 text-white text-sm rounded-full">42:15</div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs rounded-full">Expert Interview</span>
+                            <span class="text-sm text-text-secondary">Aug 18, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-primary group-hover:text-primary-700 transition-natural">
+                            Advanced IPM Strategies with Dr. Michael Chen
+                        </h3>
+                        <p class="text-text-secondary">Deep dive into integrated pest management principles, biological controls, and sustainable growing practices for commercial operations.</p>
+                        <div class="flex items-center justify-between pt-2">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Chen" class="w-6 h-6 rounded-full object-cover mr-2" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <span>Dr. Michael Chen</span>
+                            </div>
+                            <div class="flex items-center text-sm text-primary font-semibold">
+                                <span>Watch Now</span>
+                                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interview List -->
+                <div class="space-y-6">
+                    <!-- Interview 2 -->
+                    <div class="card group cursor-pointer hover:shadow-floating transition-natural" onclick="playInterview('sarah-testing')">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Rodriguez" class="w-20 h-20 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;" />
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-secondary-100 text-secondary text-xs rounded-full">Lab Insights</span>
+                                    <span class="text-sm text-text-secondary">Aug 15, 2025</span>
+                                </div>
+                                <h4 class="text-lg font-inter font-semibold text-secondary mb-2 group-hover:text-secondary-700 transition-natural">
+                                    Product Testing Methodology with Sarah Rodriguez
+                                </h4>
+                                <p class="text-sm text-text-secondary">Behind-the-scenes look at our rigorous testing protocols and quality assurance processes.</p>
+                                <div class="flex items-center justify-between mt-3">
+                                    <span class="text-sm text-text-secondary">28:45</span>
+                                    <div class="flex items-center text-sm text-secondary font-semibold">
+                                        <span>Watch</span>
+                                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interview 3 -->
+                    <div class="card group cursor-pointer hover:shadow-floating transition-natural" onclick="playInterview('james-mastery')">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="James Thompson" class="w-20 h-20 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-accent-100 text-accent text-xs rounded-full">Master Class</span>
+                                    <span class="text-sm text-text-secondary">Aug 12, 2025</span>
+                                </div>
+                                <h4 class="text-lg font-inter font-semibold text-accent mb-2 group-hover:text-accent-700 transition-natural">
+                                    Cultivation Mastery with James Thompson
+                                </h4>
+                                <p class="text-sm text-text-secondary">20+ years of growing wisdom, common mistakes, and pro tips for exceptional harvests.</p>
+                                <div class="flex items-center justify-between mt-3">
+                                    <span class="text-sm text-text-secondary">35:20</span>
+                                    <div class="flex items-center text-sm text-accent font-semibold">
+                                        <span>Watch</span>
+                                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-natural" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- View All Link -->
+                    <div class="text-center pt-4">
+                        <a href="javascript:void(0)" class="text-primary font-semibold hover:text-primary-700 transition-natural">
+                            View All Expert Interviews →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 mr-3" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="white"/>
+                            <path d="M20 8C16.5 8 14 10.5 14 14V20C14 23.5 16.5 26 20 26C23.5 26 26 23.5 26 20V14C26 10.5 23.5 8 20 8Z" fill="#4A7C59"/>
+                            <path d="M20 12C18.3 12 17 13.3 17 15V19C17 20.7 18.3 22 20 22C21.7 22 23 20.7 23 19V15C23 13.3 21.7 12 20 12Z" fill="#64A578"/>
+                            <circle cx="20" cy="32" r="2" fill="#FF6B35"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-inter font-bold text-lg">GrowGuard Authority</h3>
+                            <p class="text-primary-200 text-sm">Premium Cultivation Resource</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 text-sm">
+                        The definitive resource for cannabis cultivation with scientific rigor and community-driven insights.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="product_reviews_database.html" class="text-primary-200 hover:text-white transition-natural">Product Reviews</a></li>
+                        <li><a href="knowledge_academy.html" class="text-primary-200 hover:text-white transition-natural">Knowledge Academy</a></li>
+                        <li><a href="testing_lab_insights.html" class="text-primary-200 hover:text-white transition-natural">Lab Insights</a></li>
+                        <li><a href="industry_news_hub.html" class="text-primary-200 hover:text-white transition-natural">Industry News</a></li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="community_forum.html" class="text-primary-200 hover:text-white transition-natural">Discussion Forum</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Success Stories</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Expert Q&A</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Growing Tips</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-200 text-sm">
+                    © 2025 GrowGuard Authority. All Rights Reserved. | Empowering growers through science-backed knowledge.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function showLearningPath(level) {
+            // Hide all paths
+            document.querySelectorAll('.learning-path-content').forEach(path => {
+                path.classList.add('hidden');
+            });
+            
+            // Show selected path
+            document.getElementById(level + '-path').classList.remove('hidden');
+            
+            // Update button states
+            document.querySelectorAll('.learning-path-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.remove('bg-primary', 'text-white');
+                btn.classList.add('bg-white', 'text-primary', 'border-2', 'border-primary');
+            });
+            
+            // Activate selected button
+            const activeBtn = document.querySelector(`[data-level="${level}"]`);
+            activeBtn.classList.add('active');
+            activeBtn.classList.remove('bg-white', 'text-primary', 'border-2', 'border-primary');
+            activeBtn.classList.add('bg-primary', 'text-white');
+        }
+
+        function openModule(moduleId) {
+            // Placeholder for module opening functionality
+            console.log('Opening module:', moduleId);
+            alert('Module content would open here. This is a demo interface.');
+        }
+
+        function openTool(toolId) {
+            // Placeholder for tool opening functionality
+            console.log('Opening tool:', toolId);
+            alert('Interactive tool would launch here. This is a demo interface.');
+        }
+
+        function viewMonthDetails(month) {
+            // Placeholder for month details functionality
+            console.log('Viewing month details:', month);
+            alert('Detailed month view would open here. This is a demo interface.');
+        }
+
+        function viewFullCalendar() {
+            // Placeholder for full calendar functionality
+            console.log('Opening full calendar');
+            alert('Full seasonal calendar would open here. This is a demo interface.');
+        }
+
+        function playInterview(interviewId) {
+            // Placeholder for interview playback functionality
+            console.log('Playing interview:', interviewId);
+            alert('Video interview would play here. This is a demo interface.');
+        }
+
+        // Initialize with beginner path visible
+        document.addEventListener('DOMContentLoaded', function() {
+            showLearningPath('beginner');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

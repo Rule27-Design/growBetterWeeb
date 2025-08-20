@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing Lab Insights - GrowGuard Authority</title>
+    <meta name="description" content="Behind-the-scenes look at GrowGuard's scientific testing methodology, research findings, and laboratory processes that ensure reliable product evaluations." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgrowguard5908back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-natural sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="#2D5016"/>
+                            <path d="M20 8C16.5 8 14 10.5 14 14V20C14 23.5 16.5 26 20 26C23.5 26 26 23.5 26 20V14C26 10.5 23.5 8 20 8Z" fill="#4A7C59"/>
+                            <path d="M20 12C18.3 12 17 13.3 17 15V19C17 20.7 18.3 22 20 22C21.7 22 23 20.7 23 19V15C23 13.3 21.7 12 20 12Z" fill="#64A578"/>
+                            <circle cx="20" cy="32" r="2" fill="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-inter font-bold text-primary">GrowGuard Authority</h1>
+                        <p class="text-xs text-text-secondary">Premium Cultivation Resource</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Home</a>
+                        <a href="product_reviews_database.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Product Reviews</a>
+                        <a href="knowledge_academy.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Knowledge Academy</a>
+                        <a href="community_forum.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Community</a>
+                        <a href="testing_lab_insights.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Lab Insights</a>
+                        <a href="industry_news_hub.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-natural">Industry News</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Home</a>
+                    <a href="product_reviews_database.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Product Reviews</a>
+                    <a href="knowledge_academy.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Knowledge Academy</a>
+                    <a href="community_forum.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Community</a>
+                    <a href="testing_lab_insights.html" class="text-primary font-semibold block px-3 py-2 rounded-md text-base">Lab Insights</a>
+                    <a href="industry_news_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-natural">Industry News</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+            <div class="text-center">
+                <div class="inline-flex items-center px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-semibold mb-6">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    Scientific Transparency • Rigorous Testing • Research Excellence
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-primary leading-tight mb-6">
+                    Behind the <span class="text-gradient-primary">Science</span>
+                </h1>
+                <p class="text-xl text-text-secondary leading-relaxed max-w-3xl mx-auto mb-8">
+                    Discover the rigorous testing methodology, advanced laboratory processes, and research findings that make GrowGuard Authority the most trusted source for cannabis pest management solutions.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-primary">500+</div>
+                        <div class="text-sm text-text-secondary">Products Tested</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-secondary">15</div>
+                        <div class="text-sm text-text-secondary">Testing Parameters</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-accent">72hrs</div>
+                        <div class="text-sm text-text-secondary">Average Test Time</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-inter font-bold text-success">99.2%</div>
+                        <div class="text-sm text-text-secondary">Accuracy Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Lab Tour Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Virtual Lab Tour</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Take an interactive journey through our state-of-the-art testing facility and discover the equipment and processes behind our rigorous evaluations.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <!-- Lab Tour Content -->
+                <div class="space-y-8">
+                    <div class="card-floating">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-inter font-semibold text-primary mb-2">Chemical Analysis Station</h3>
+                                <p class="text-text-secondary mb-4">High-performance liquid chromatography (HPLC) and gas chromatography-mass spectrometry (GC-MS) systems for precise active ingredient analysis.</p>
+                                <button class="text-primary font-semibold hover:text-primary-700 transition-natural" onclick="showLabDetail('chemical')">
+                                    Explore Equipment →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-floating">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-inter font-semibold text-secondary mb-2">Efficacy Testing Chamber</h3>
+                                <p class="text-text-secondary mb-4">Controlled environment chambers for testing product effectiveness against live pest populations under various conditions.</p>
+                                <button class="text-secondary font-semibold hover:text-secondary-700 transition-natural" onclick="showLabDetail('efficacy')">
+                                    View Testing Process →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-floating">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-inter font-semibold text-accent mb-2">Safety Assessment Lab</h3>
+                                <p class="text-text-secondary mb-4">Comprehensive safety testing including residue analysis, phytotoxicity studies, and environmental impact assessment.</p>
+                                <button class="text-accent font-semibold hover:text-accent-600 transition-natural" onclick="showLabDetail('safety')">
+                                    Learn Safety Protocols →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lab Tour Visual -->
+                <div class="relative">
+                    <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-floating">
+                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern laboratory testing facility" class="w-full h-96 object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <!-- Interactive Hotspots -->
+                    <div class="absolute top-1/4 left-1/4 w-4 h-4 bg-primary rounded-full animate-pulse cursor-pointer" onclick="showLabDetail('chemical')"></div>
+                    <div class="absolute top-1/2 right-1/3 w-4 h-4 bg-secondary rounded-full animate-pulse cursor-pointer" onclick="showLabDetail('efficacy')"></div>
+                    <div class="absolute bottom-1/3 left-1/2 w-4 h-4 bg-accent rounded-full animate-pulse cursor-pointer" onclick="showLabDetail('safety')"></div>
+                </div>
+            </div>
+
+            <!-- Interactive Lab Detail Modal Placeholder -->
+            <div id="lab-detail-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-96 overflow-y-auto">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 id="modal-title" class="text-2xl font-inter font-bold text-primary"></h3>
+                            <button onclick="closeLabDetail()" class="text-text-secondary hover:text-primary">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="modal-content" class="text-text-secondary"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing Methodology Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Our Testing Methodology</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">A comprehensive 15-parameter evaluation system that ensures every product review is backed by rigorous scientific analysis.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Phase 1: Initial Analysis -->
+                <div class="card-floating">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-inter font-bold text-primary">1</span>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-primary mb-2">Initial Analysis</h3>
+                        <p class="text-text-secondary">Comprehensive product characterization and baseline testing</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Active ingredient verification
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Concentration accuracy
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Formulation stability
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            pH and compatibility testing
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Contaminant screening
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Phase 2: Efficacy Testing -->
+                <div class="card-floating">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-inter font-bold text-secondary">2</span>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-secondary mb-2">Efficacy Testing</h3>
+                        <p class="text-text-secondary">Real-world effectiveness against target pest populations</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Live pest bioassays
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Knockdown time analysis
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Residual effectiveness
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Resistance development
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Environmental conditions impact
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Phase 3: Safety & Impact -->
+                <div class="card-floating">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-inter font-bold text-accent">3</span>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-accent mb-2">Safety & Impact</h3>
+                        <p class="text-text-secondary">Comprehensive safety evaluation and environmental assessment</p>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Plant phytotoxicity testing
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Beneficial insect impact
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Residue degradation analysis
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Human exposure assessment
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                            </svg>
+                            Environmental fate studies
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Download Methodology Guide -->
+            <div class="text-center">
+                <div class="card-floating inline-block">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                        </div>
+                        <div class="text-left">
+                            <h3 class="font-inter font-semibold text-primary">Complete Testing Protocol</h3>
+                            <p class="text-sm text-text-secondary">Download our comprehensive 47-page methodology guide</p>
+                        </div>
+                        <button class="btn-primary">Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Findings Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Latest Research Findings</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Data-driven insights from our ongoing research programs, revealing trends and breakthrough discoveries in cannabis pest management.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Research Highlights -->
+                <div class="space-y-8">
+                    <!-- Research Finding 1 -->
+                    <div class="card-floating">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v4a2 2 0 01-2 2h-2a2 2 0 00-2-2z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-success-100 text-success-700 text-xs rounded-full">New Research</span>
+                                    <span class="text-sm text-text-secondary">August 2025</span>
+                                </div>
+                                <h3 class="text-xl font-inter font-semibold text-primary mb-2">Organic Pesticide Effectiveness Study</h3>
+                                <p class="text-text-secondary mb-4">Our comprehensive analysis of 25 organic pesticides reveals surprising effectiveness patterns, with neem-based formulations showing 34% higher efficacy when combined with specific surfactants.</p>
+                                <div class="flex items-center gap-4">
+                                    <button class="text-primary font-semibold hover:text-primary-700 transition-natural">View Full Study</button>
+                                    <button class="text-text-secondary hover:text-primary transition-natural">Download PDF</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Finding 2 -->
+                    <div class="card-floating">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-warning-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16c-.77.833.192 2.5 1.732 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-warning-100 text-warning-700 text-xs rounded-full">Industry Alert</span>
+                                    <span class="text-sm text-text-secondary">July 2025</span>
+                                </div>
+                                <h3 class="text-xl font-inter font-semibold text-primary mb-2">Resistance Development Patterns</h3>
+                                <p class="text-text-secondary mb-4">Multi-year tracking study identifies concerning resistance development in spider mite populations to commonly used miticides, with recommendations for rotation strategies.</p>
+                                <div class="flex items-center gap-4">
+                                    <button class="text-primary font-semibold hover:text-primary-700 transition-natural">Read Analysis</button>
+                                    <button class="text-text-secondary hover:text-primary transition-natural">Download Report</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Finding 3 -->
+                    <div class="card-floating">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs rounded-full">Breakthrough</span>
+                                    <span class="text-sm text-text-secondary">June 2025</span>
+                                </div>
+                                <h3 class="text-xl font-inter font-semibold text-primary mb-2">IPM Protocol Optimization</h3>
+                                <p class="text-text-secondary mb-4">Revolutionary findings on timing and application sequences that increase IPM program effectiveness by up to 67% while reducing overall pesticide usage.</p>
+                                <div class="flex items-center gap-4">
+                                    <button class="text-primary font-semibold hover:text-primary-700 transition-natural">Explore Protocol</button>
+                                    <button class="text-text-secondary hover:text-primary transition-natural">Implementation Guide</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="space-y-8">
+                    <!-- Effectiveness Chart -->
+                    <div class="card-floating">
+                        <h3 class="text-xl font-inter font-semibold text-primary mb-4">Product Effectiveness Trends (2025)</h3>
+                        <div class="h-64 bg-surface rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-full h-full p-4" viewBox="0 0 400 200">
+                                <!-- Chart Background -->
+                                <rect x="40" y="20" width="320" height="160" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+                                
+                                <!-- Grid Lines -->
+                                <line x1="40" y1="60" x2="360" y2="60" stroke="#F3F4F6" stroke-width="1"/>
+                                <line x1="40" y1="100" x2="360" y2="100" stroke="#F3F4F6" stroke-width="1"/>
+                                <line x1="40" y1="140" x2="360" y2="140" stroke="#F3F4F6" stroke-width="1"/>
+                                
+                                <!-- Bars -->
+                                <rect x="60" y="80" width="40" height="100" fill="#4A7C59"/>
+                                <rect x="120" y="60" width="40" height="120" fill="#2D5016"/>
+                                <rect x="180" y="100" width="40" height="80" fill="#FF6B35"/>
+                                <rect x="240" y="70" width="40" height="110" fill="#64A578"/>
+                                <rect x="300" y="90" width="40" height="90" fill="#22C55E"/>
+                                
+                                <!-- Labels -->
+                                <text x="80" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Neem</text>
+                                <text x="140" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Spinosad</text>
+                                <text x="200" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Pyrethrin</text>
+                                <text x="260" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">BT</text>
+                                <text x="320" y="195" text-anchor="middle" class="text-xs fill-current text-text-secondary">Predators</text>
+                                
+                                <!-- Y-axis labels -->
+                                <text x="35" y="185" text-anchor="end" class="text-xs fill-current text-text-secondary">0%</text>
+                                <text x="35" y="145" text-anchor="end" class="text-xs fill-current text-text-secondary">25%</text>
+                                <text x="35" y="105" text-anchor="end" class="text-xs fill-current text-text-secondary">50%</text>
+                                <text x="35" y="65" text-anchor="end" class="text-xs fill-current text-text-secondary">75%</text>
+                                <text x="35" y="25" text-anchor="end" class="text-xs fill-current text-text-secondary">100%</text>
+                            </svg>
+                        </div>
+                        <p class="text-sm text-text-secondary">Average effectiveness across all tested pest species. Data represents 500+ individual tests conducted in 2025.</p>
+                    </div>
+
+                    <!-- Research Stats -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card text-center">
+                            <div class="text-2xl font-inter font-bold text-primary mb-1">127</div>
+                            <div class="text-sm text-text-secondary">Active Studies</div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="text-2xl font-inter font-bold text-secondary mb-1">23</div>
+                            <div class="text-sm text-text-secondary">Research Partners</div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="text-2xl font-inter font-bold text-accent mb-1">89%</div>
+                            <div class="text-sm text-text-secondary">Peer Review Rate</div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="text-2xl font-inter font-bold text-success mb-1">156</div>
+                            <div class="text-sm text-text-secondary">Published Papers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Spotlight Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Research Partnerships</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">Collaborating with leading institutions and organizations to advance cannabis pest management science.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Partner 1 -->
+                <div class="card-floating text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-primary mb-2">University Research Labs</h3>
+                    <p class="text-text-secondary mb-4">Partnerships with 12 leading agricultural universities for peer-reviewed research and validation studies.</p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div>• UC Davis Agricultural Research</div>
+                        <div>• Cornell Entomology Department</div>
+                        <div>• Colorado State IPM Program</div>
+                    </div>
+                </div>
+
+                <!-- Partner 2 -->
+                <div class="card-floating text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-secondary mb-2">Certified Testing Labs</h3>
+                    <p class="text-text-secondary mb-4">Network of ISO-certified laboratories providing independent verification and specialized testing services.</p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div>• AgriTech Analytical Services</div>
+                        <div>• BioSafe Testing Laboratory</div>
+                        <div>• Green Leaf Certification</div>
+                    </div>
+                </div>
+
+                <!-- Partner 3 -->
+                <div class="card-floating text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-accent mb-2">Industry Organizations</h3>
+                    <p class="text-text-secondary mb-4">Active collaboration with trade associations and regulatory bodies to shape industry standards.</p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div>• Cannabis Trade Federation</div>
+                        <div>• Organic Pesticide Alliance</div>
+                        <div>• IPM Research Consortium</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Research Request Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-primary mb-4">Request Research</h2>
+                <p class="text-xl text-text-secondary">Have a product you'd like us to test or a research question that needs answering? Submit your request and help shape our research priorities.</p>
+            </div>
+
+            <div class="card-floating">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Request Type</label>
+                            <select class="input-field">
+                                <option>Product Testing Request</option>
+                                <option>Research Question</option>
+                                <option>Methodology Inquiry</option>
+                                <option>Collaboration Proposal</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Priority Level</label>
+                            <select class="input-field">
+                                <option>Standard (4-6 weeks)</option>
+                                <option>High (2-3 weeks)</option>
+                                <option>Urgent (1 week)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Product/Topic Details</label>
+                        <input type="text" class="input-field" placeholder="Product name, manufacturer, or research topic" />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-primary mb-2">Specific Questions or Testing Parameters</label>
+                        <textarea class="input-field h-32" placeholder="Describe what you'd like us to investigate, test, or analyze..."></textarea>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Your Experience Level</label>
+                            <select class="input-field">
+                                <option>Beginner Grower</option>
+                                <option>Intermediate Grower</option>
+                                <option>Advanced Grower</option>
+                                <option>Commercial Grower</option>
+                                <option>Industry Professional</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Contact Email</label>
+                            <input type="email" class="input-field" placeholder="your@email.com" />
+                        </div>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input type="checkbox" id="updates" class="w-4 h-4 text-primary border-gray-300 rounded focus:ring-primary-300" />
+                        <label for="updates" class="ml-2 text-sm text-text-secondary">
+                            Send me updates on this research request and related findings
+                        </label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary">Submit Research Request</button>
+                        <p class="text-sm text-text-secondary mt-2">
+                            We review all requests and respond within 48 hours with feasibility and timeline information.
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Recent Community Requests -->
+            <div class="mt-12">
+                <h3 class="text-xl font-inter font-semibold text-primary mb-6 text-center">Recent Community Requests</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="card border-l-4 border-primary">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-semibold text-primary">Beneficial Nematode Effectiveness</h4>
+                            <span class="px-2 py-1 bg-success-100 text-success-700 text-xs rounded-full">In Progress</span>
+                        </div>
+                        <p class="text-sm text-text-secondary mb-2">Testing various nematode species against root aphids in hydroponic systems.</p>
+                        <div class="text-xs text-text-secondary">Requested by: MasterGrower_2025 • Est. completion: Sept 15</div>
+                    </div>
+
+                    <div class="card border-l-4 border-secondary">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-semibold text-secondary">Organic Fungicide Rotation</h4>
+                            <span class="px-2 py-1 bg-warning-100 text-warning-700 text-xs rounded-full">Planning</span>
+                        </div>
+                        <p class="text-sm text-text-secondary mb-2">Optimal rotation schedule for organic fungicides to prevent resistance.</p>
+                        <div class="text-xs text-text-secondary">Requested by: OrganicExpert • Est. completion: Oct 1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 mr-3" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" fill="white"/>
+                            <path d="M20 8C16.5 8 14 10.5 14 14V20C14 23.5 16.5 26 20 26C23.5 26 26 23.5 26 20V14C26 10.5 23.5 8 20 8Z" fill="#4A7C59"/>
+                            <path d="M20 12C18.3 12 17 13.3 17 15V19C17 20.7 18.3 22 20 22C21.7 22 23 20.7 23 19V15C23 13.3 21.7 12 20 12Z" fill="#64A578"/>
+                            <circle cx="20" cy="32" r="2" fill="#FF6B35"/>
+                        </svg>
+                        <div>
+                            <h3 class="font-inter font-bold text-lg">GrowGuard Authority</h3>
+                            <p class="text-primary-200 text-sm">Premium Cultivation Resource</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-200 text-sm">
+                        The definitive resource for cannabis cultivation with scientific rigor and community-driven insights.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="product_reviews_database.html" class="text-primary-200 hover:text-white transition-natural">Product Reviews</a></li>
+                        <li><a href="knowledge_academy.html" class="text-primary-200 hover:text-white transition-natural">Knowledge Academy</a></li>
+                        <li><a href="testing_lab_insights.html" class="text-primary-200 hover:text-white transition-natural">Lab Insights</a></li>
+                        <li><a href="industry_news_hub.html" class="text-primary-200 hover:text-white transition-natural">Industry News</a></li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="community_forum.html" class="text-primary-200 hover:text-white transition-natural">Discussion Forum</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Success Stories</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Expert Q&A</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Growing Tips</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-natural">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 mt-8 pt-8 text-center">
+                <p class="text-primary-200 text-sm">
+                    © 2025 GrowGuard Authority. All Rights Reserved. | Empowering growers through science-backed knowledge.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function showLabDetail(type) {
+            const modal = document.getElementById('lab-detail-modal');
+            const title = document.getElementById('modal-title');
+            const content = document.getElementById('modal-content');
+            
+            const details = {
+                chemical: {
+                    title: 'Chemical Analysis Station',
+                    content: `
+                        <div class="space-y-4">
+                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chemical Analysis Equipment" class="w-full h-48 object-cover rounded-lg">
+                            <h4 class="font-semibold text-primary">Equipment Overview</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>• Agilent 1260 HPLC System with UV-DAD detection</li>
+                                <li>• Shimadzu GC-MS QP2020 for volatile compound analysis</li>
+                                <li>• Waters UPLC-MS/MS for trace-level quantification</li>
+                                <li>• Automated sample preparation workstation</li>
+                            </ul>
+                            <p class="text-sm">Our chemical analysis station can detect active ingredients at parts-per-million levels, ensuring accurate potency verification and contamination screening.</p>
+                        </div>
+                    `
+                },
+                efficacy: {
+                    title: 'Efficacy Testing Chamber',
+                    content: `
+                        <div class="space-y-4">
+                            <img src="https://images.unsplash.com/photo-1576671081837-49000212a370?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Testing Chamber" class="w-full h-48 object-cover rounded-lg">
+                            <h4 class="font-semibold text-secondary">Testing Protocol</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>• Climate-controlled chambers (18-28°C, 40-80% RH)</li>
+                                <li>• Live pest colonies maintained under sterile conditions</li>
+                                <li>• Standardized plant material for consistent testing</li>
+                                <li>• Digital monitoring and data collection systems</li>
+                            </ul>
+                            <p class="text-sm">Each product undergoes 72-hour efficacy testing against live pest populations, with mortality rates recorded at 6-hour intervals.</p>
+                        </div>
+                    `
+                },
+                safety: {
+                    title: 'Safety Assessment Laboratory',
+                    content: `
+                        <div class="space-y-4">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Safety Testing Lab" class="w-full h-48 object-cover rounded-lg">
+                            <h4 class="font-semibold text-accent">Safety Protocols</h4>
+                            <ul class="space-y-2 text-sm">
+                                <li>• Phytotoxicity testing on multiple cannabis cultivars</li>
+                                <li>• Beneficial insect impact assessment chambers</li>
+                                <li>• Residue degradation studies under various conditions</li>
+                                <li>• Environmental fate and transport modeling</li>
+                            </ul>
+                            <p class="text-sm">Comprehensive safety evaluation ensures products meet the highest standards for plant health, environmental impact, and user safety.</p>
+                        </div>
+                    `
+                }
+            };
+            
+            title.textContent = details[type].title;
+            content.innerHTML = details[type].content;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLabDetail() {
+            document.getElementById('lab-detail-modal').classList.add('hidden');
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('lab-detail-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLabDetail();
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

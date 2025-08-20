@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors - Deep forest authority, professional growing expertise */
+  --color-primary: #2D5016; /* deep-forest-green */
+  --color-primary-50: #F0F4ED; /* light-forest-tint */
+  --color-primary-100: #D9E5CC; /* forest-green-100 */
+  --color-primary-200: #B8D199; /* forest-green-200 */
+  --color-primary-300: #97BD66; /* forest-green-300 */
+  --color-primary-400: #76A933; /* forest-green-400 */
+  --color-primary-500: #559500; /* forest-green-500 */
+  --color-primary-600: #447A00; /* forest-green-600 */
+  --color-primary-700: #336000; /* forest-green-700 */
+  --color-primary-800: #224500; /* forest-green-800 */
+  --color-primary-900: #2D5016; /* deep-forest-green */
+
+  /* Secondary Colors - Natural credibility, organic solution focus */
+  --color-secondary: #4A7C59; /* natural-green */
+  --color-secondary-50: #F2F7F4; /* light-natural-tint */
+  --color-secondary-100: #E0EDE4; /* natural-green-100 */
+  --color-secondary-200: #C1DBC9; /* natural-green-200 */
+  --color-secondary-300: #A2C9AE; /* natural-green-300 */
+  --color-secondary-400: #83B793; /* natural-green-400 */
+  --color-secondary-500: #64A578; /* natural-green-500 */
+  --color-secondary-600: #4A7C59; /* natural-green-600 */
+  --color-secondary-700: #3A6147; /* natural-green-700 */
+  --color-secondary-800: #2A4635; /* natural-green-800 */
+  --color-secondary-900: #1A2B23; /* natural-green-900 */
+
+  /* Accent Colors - Safety warnings, critical action moments */
+  --color-accent: #FF6B35; /* safety-orange */
+  --color-accent-50: #FFF4F0; /* light-orange-tint */
+  --color-accent-100: #FFE4D6; /* safety-orange-100 */
+  --color-accent-200: #FFC9AD; /* safety-orange-200 */
+  --color-accent-300: #FFAE84; /* safety-orange-300 */
+  --color-accent-400: #FF935B; /* safety-orange-400 */
+  --color-accent-500: #FF6B35; /* safety-orange-500 */
+  --color-accent-600: #E55A2B; /* safety-orange-600 */
+  --color-accent-700: #CC4921; /* safety-orange-700 */
+  --color-accent-800: #B23817; /* safety-orange-800 */
+  --color-accent-900: #99270D; /* safety-orange-900 */
+
+  /* Background Colors */
+  --color-background: #FAFAFA; /* clean-scientific-canvas */
+  --color-surface: #F5F7F5; /* subtle-natural-depth */
+
+  /* Text Colors */
+  --color-text-primary: #1A1A1A; /* extended-reading-comfort */
+  --color-text-secondary: #666666; /* clear-information-hierarchy */
+
+  /* Status Colors */
+  --color-success: #22C55E; /* positive-results-green */
+  --color-warning: #F59E0B; /* caution-amber */
+  --color-error: #EF4444; /* helpful-problem-red */
+
+  /* Shadow Variables */
+  --shadow-natural: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-floating: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+  }
+
+  .font-accent {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-inter font-semibold transition-all duration-250 ease-out hover:bg-primary-700 focus:ring-2 focus:ring-primary-300;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-inter font-semibold transition-all duration-250 ease-out hover:bg-secondary-700 focus:ring-2 focus:ring-secondary-300;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-inter font-semibold transition-all duration-250 ease-out hover:bg-accent-600 focus:ring-2 focus:ring-accent-300;
+  }
+
+  .card {
+    @apply bg-surface rounded-lg p-6 transition-all duration-250 ease-out;
+  }
+
+  .card-floating {
+    @apply bg-white rounded-lg p-6 shadow-natural transition-all duration-250 ease-out hover:shadow-floating;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-300 focus:border-primary-500 transition-all duration-250 ease-out;
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .transition-natural {
+    transition: all 250ms ease-out;
+  }
+
+  .transition-page {
+    transition: all 300ms ease-out;
+  }
+
+  .shadow-natural {
+    box-shadow: var(--shadow-natural);
+  }
+
+  .shadow-floating {
+    box-shadow: var(--shadow-floating);
+  }
+}
