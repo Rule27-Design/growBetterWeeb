@@ -66,7 +66,7 @@ yarn build:css
 
 ## 📱 Responsive Design
 
-The app is built with responsive design using Tailwind CSS breakpoints:
+The app is built with a responsive design using Tailwind CSS breakpoints:
 
 - `sm`: 640px and up
 - `md`: 768px and up
@@ -74,9 +74,4 @@ The app is built with responsive design using Tailwind CSS breakpoints:
 - `xl`: 1280px and up
 - `2xl`: 1536px and up
 
-## 🙏 Acknowledgments
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by HTML and Tailwind CSS
-
-Built with ❤️ on Rocket.new
